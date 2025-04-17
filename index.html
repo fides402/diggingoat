@@ -6,14 +6,15 @@
 </head>
 <body>
     <h1>Downloader di Sample YouTube 🎵</h1>
-    <p>Clicca il pulsante per generare una selezione casuale di sample audio da YouTube.</p>
+    <p>Questo strumento seleziona playlist da YouTube con la parola chiave <strong>samples</strong> e scarica alcuni audio.</p>
     
-    <form action="https://github.com/fides402/digginggoat/actions/workflows/run_script.yml/dispatches" method="post">
-        <input type="hidden" name="ref" value="main">
-        <input type="hidden" name="inputs[keyword]" value="samples">
-        <button type="submit">🎧 Scarica Samples</button>
-    </form>
+    <p>
+        <a href="https://github.com/fides402/digginggoat/actions/workflows/run_script.yml" target="_blank">
+            <button style="font-size: 18px; padding: 10px 20px;">🎧 Avvia Generazione Samples</button>
+        </a>
+    </p>
 
-    <p>I file verranno generati e resi disponibili per 24 ore.</p>
+    <p>⚠️ Devi essere loggato su GitHub per avviare il workflow.<br>
+    I file scaricati saranno disponibili come artifact per 24 ore nella pagina del workflow.</p>
 </body>
 </html>
