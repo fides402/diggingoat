@@ -1,20 +1,66 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>YouTube Samples Downloader</title>
+  <meta charset="UTF-8">
+  <title>Type Beat Finder</title>
+  <style>
+    body {
+      margin: 0;
+      background: #a55a43;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .container {
+      position: relative;
+      width: 768px;
+      margin: 0 auto;
+    }
+    .main-image {
+      width: 100%;
+      display: block;
+    }
+    .find-samples-btn {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto 40px auto;
+      width: 220px;
+      height: 70px;
+      background: #f5e9d7;
+      color: #a55a43;
+      border: none;
+      border-radius: 18px;
+      font-size: 2rem;
+      font-weight: bold;
+      box-shadow: 0 6px #b97a5a;
+      cursor: pointer;
+      transition: all 0.1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+    .find-samples-btn:active {
+      box-shadow: 0 2px #b97a5a;
+      transform: translateY(4px) scale(0.97);
+    }
+    @media (max-width: 800px) {
+      .container { width: 100vw; }
+    }
+  </style>
 </head>
 <body>
-    <h1>Downloader di Sample YouTube 🎵</h1>
-    <p>Questo strumento seleziona playlist da YouTube con la parola chiave <strong>samples</strong> e scarica alcuni audio.</p>
-    
-    <p>
-        <a href="https://github.com/fides402/digginggoat/actions/workflows/run_script.yml" target="_blank">
-            <button style="font-size: 18px; padding: 10px 20px;">🎧 Avvia Generazione Samples</button>
-        </a>
-    </p>
-
-    <p>⚠️ Devi essere loggato su GitHub per avviare il workflow.<br>
-    I file scaricati saranno disponibili come artifact per 24 ore nella pagina del workflow.</p>
+  <div class="container">
+    <img src="image%20(10).png" alt="Type Beat Finder" class="main-image">
+    <button class="find-samples-btn" onclick="findSamples()">Find Samples</button>
+  </div>
+  <script>
+    function findSamples() {
+      // Esempio: scarica il report (puoi cambiare il file/link)
+      window.open('TYPE%20BEAT%20FINDER/type_beat_report.docx', '_blank');
+      // Oppure mostra un messaggio
+      // alert('Funzione Find Samples!');
+    }
+  </script>
 </body>
 </html>
